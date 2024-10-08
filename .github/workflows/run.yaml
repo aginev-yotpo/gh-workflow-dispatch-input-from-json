@@ -6,10 +6,42 @@ on:
         type: choice
         description: Select package to run
         options:
-          - one
-          - two
-          - three
-          - four
+          - smsbump/smsbump-tools
+          - smsbump-bears-playground/auth-plugin
+          - smsbump-bears-playground/prometheus-plugin
+          - smsbump/logger
+          - smsbump/clients
+          - smsbump/email-sender
+          - smsbump/redis
+          - smsbump/intl
+          - smsbump/queue-sdk
+          - smsbump/integration-utilities
+          - smsbump/hubspot-integration
+          - smsbump/omnisend-integration
+          - smsbump/facebook-integration
+          - smsbump/google-integration
+          - smsbump/tapcart-integration
+          - smsbump/message-routing-service
+          - smsbump/user-service-messages
+          - smsbump/bugsnag-plugin
+          - smsbump/kafka-tools
+          - smsbump/synergies-loyalty-sdk
+          - smsbump/mysql-prefix-plugin
+          - smsbump/global-sender-abuse-prevention
+          - yotpo/contact-card
+          - yotpo/numbers-management-sdk
+          - smsbump/looker-manager
+          - smsbump/email-charge-service
+          - smsbump/rate-limiter
+          - smsbump/php-redis-rate-limiter
+          - smsbump/cakephp-tools
+          - smsbump/segmentio-analytics
+          - smsbump/feature-flags
+          - smsbump/php-opentelemetry
+          - smsbump/mongo-plugin
+          - smsbump/sms-campaigns-statistics-events
+          - smsbump/klaviyo-sync
+          - shopify/shopify-api
 
 jobs:
   build:
