@@ -22,3 +22,4 @@ jobs:
       - name: Echo
         run: |
           echo "Running $PACKAGE"
+          cat packages.json | jq -r '.repositories[] | .name'
