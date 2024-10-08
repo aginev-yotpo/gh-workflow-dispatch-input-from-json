@@ -1,0 +1,24 @@
+name: 'Run'
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        type: choice
+        description: Select package to run
+        options:
+          - one
+          - two
+          - three
+          - four
+
+jobs:
+  build:
+    env:
+      PACKAGE: ${{ github.event.inputs.package }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Echo
+        run: |
+          echo "Running $PACKAGE"
